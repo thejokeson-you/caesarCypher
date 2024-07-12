@@ -10,14 +10,14 @@ def encrypt(inpstr, key):
     i = 0
     for x in inp_list:
         if x == " ":
-            new_inp_list[i] == " "
+            new_inp_list.append(" ")
         else:
             new_index = (alphabet.index(x) + key) % 26
             new_inp_list.append(alphabet[new_index])
 
         i += 1
 
-    return str(new_inp_list)
+    print("".join(str(x) for x in new_inp_list))
 
 
 print("CAESAR CYPHER")

@@ -2,6 +2,6 @@
 
 A program which will encrypt a string based on a key shift value using Caesar Cypher.
 
-**TO DO:
+**TO DO:**
 - Add encryption for capital letters & numbers
 - Add encryption for special characters

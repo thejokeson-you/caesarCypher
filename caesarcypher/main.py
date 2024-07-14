@@ -18,8 +18,12 @@ def encrypt(inpstr, key):
         if x == " ":
             new_inp_list.append(" ")
         else:
-            new_index = (alphabet.index(x) + key) % 26
-            new_inp_list.append(alphabet[new_index])
+            if x.isupper():
+                new_index = (alphabet.index(x.lower()) + key) % 26
+                new_inp_list.append(alphabet[new_index].upper())
+            else:
+                new_index = (alphabet.index(x) + key) % 26
+                new_inp_list.append(alphabet[new_index])
 
         i += 1
 
